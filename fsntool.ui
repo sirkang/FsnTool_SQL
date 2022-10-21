@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FsnTool</class>
+ <widget class="QMainWindow" name="FsnTool">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>FsnTool</string>
+  </property>
+  <widget class="QWidget" name="GUI">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <layout class="QGridLayout" name="up">
+      <item row="0" column="2">
+       <layout class="QVBoxLayout" name="verticalLayout_2"/>
+      </item>
+      <item row="0" column="4">
+       <widget class="QLabel" name="label_fsn_num">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>Num：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_logo">
+        <property name="text">
+         <string>Logo</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="1" column="2">
+         <widget class="QLineEdit" name="lineEdit_fsnName"/>
+        </item>
+        <item row="1" column="3">
+         <widget class="QPushButton" name="pushButton_2">
+          <property name="text">
+           <string>Choose File</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>FsnFile：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>FsnFilePath：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2" colspan="2">
+         <widget class="QLineEdit" name="lineEdit"/>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="0">
+     <layout class="QGridLayout" name="down" columnstretch="2,8">
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <item row="0" column="0">
+       <widget class="QGroupBox" name="groupBox">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="title">
+         <string>Operation</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_4">
+           <item>
+            <layout class="QGridLayout" name="gridLayout_7">
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <property name="horizontalSpacing">
+              <number>6</number>
+             </property>
+             <property name="verticalSpacing">
+              <number>0</number>
+             </property>
+             <item row="0" column="0">
+              <widget class="QPushButton" name="pushButton">
+               <property name="autoFillBackground">
+                <bool>false</bool>
+               </property>
+               <property name="text">
+                <string>Choose Path</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_7">
+             <item>
+              <layout class="QFormLayout" name="formLayout">
+               <item row="0" column="0">
+                <widget class="QLabel" name="label_5">
+                 <property name="text">
+                  <string>File Num：</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QLabel" name="label_fsnFileNumber">
+                 <property name="text">
+                  <string>0</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_5">
+               <item>
+                <widget class="QListWidget" name="listWidget_fsn">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QGroupBox" name="groupBox_2">
+                 <property name="title">
+                  <string>File Search</string>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_9">
+                  <item>
+                   <layout class="QHBoxLayout" name="horizontalLayout_4">
+                    <item>
+                     <widget class="QLabel" name="label_7">
+                      <property name="enabled">
+                       <bool>true</bool>
+                      </property>
+                      <property name="text">
+                       <string>SNo：</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLineEdit" name="lineEdit_SNo"/>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="pushButton_3">
+                      <property name="text">
+                       <string>Search</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item>
+                   <layout class="QHBoxLayout" name="horizontalLayout_5">
+                    <item>
+                     <widget class="QLabel" name="label_8">
+                      <property name="text">
+                       <string>MoneyFlag：</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLineEdit" name="lineEdit_Valuta"/>
+                    </item>
+                    <item>
+                     <widget class="QPushButton" name="pushButton_5">
+                      <property name="text">
+                       <string>Search</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item>
+                   <layout class="QGridLayout" name="gridLayout_3">
+                    <item row="3" column="0" colspan="3">
+                     <layout class="QHBoxLayout" name="horizontalLayout_6">
+                      <item>
+                       <widget class="QCheckBox" name="checkBox">
+                        <property name="text">
+                         <string>Real</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QCheckBox" name="checkBox_2">
+                        <property name="text">
+                         <string>Fake</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QCheckBox" name="checkBox_3">
+                        <property name="text">
+                         <string>Damaged</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QCheckBox" name="checkBox_4">
+                        <property name="text">
+                         <string>Old</string>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </item>
+                    <item row="5" column="1" colspan="2">
+                     <widget class="QDateTimeEdit" name="dateTimeEdit_2"/>
+                    </item>
+                    <item row="5" column="0">
+                     <widget class="QDateTimeEdit" name="dateTimeEdit"/>
+                    </item>
+                   </layout>
+                  </item>
+                  <item>
+                   <layout class="QGridLayout" name="gridLayout_6">
+                    <item row="0" column="0">
+                     <widget class="QPushButton" name="pushButton_4">
+                      <property name="text">
+                       <string>Datetime Search</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="1">
+                     <widget class="QPushButton" name="pushButton_6">
+                      <property name="text">
+                       <string>Back</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item>
+                   <layout class="QGridLayout" name="gridLayout_5" columnstretch="0,0">
+                    <item row="0" column="0">
+                     <widget class="QPushButton" name="pushButton_8">
+                      <property name="text">
+                       <string>Show All FSN</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="0" column="1">
+                     <widget class="QPushButton" name="pushButton_10">
+                      <property name="text">
+                       <string>Amalgamate All FSN</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="0">
+                     <widget class="QPushButton" name="pushButton_7">
+                      <property name="text">
+                       <string>Save Excel</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="1">
+                     <widget class="QCheckBox" name="checkBox_image">
+                      <property name="layoutDirection">
+                       <enum>Qt::LeftToRight</enum>
+                      </property>
+                      <property name="text">
+                       <string>Contains Pictures</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="pushButton_11">
+                    <property name="styleSheet">
+                     <string notr="true">font: 75 12pt &quot;微软雅黑&quot;;
+color: rgb(255, 0, 0);</string>
+                    </property>
+                    <property name="text">
+                     <string>Save Sql Data</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QGridLayout" name="gridLayout_4"/>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QGroupBox" name="groupBox_3">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="title">
+         <string>Show</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QTableWidget" name="tableWidget">
+           <column>
+            <property name="text">
+             <string>DateTime</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>TfFlag</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Error</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>MoneyFlag</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Ver</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Valuta</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>CharNUM</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>SNo</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Image</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>MachineSNo</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Operateor</string>
+            </property>
+           </column>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>pushButton_3</tabstop>
+  <tabstop>pushButton_2</tabstop>
+  <tabstop>listWidget_fsn</tabstop>
+  <tabstop>lineEdit_SNo</tabstop>
+  <tabstop>lineEdit_Valuta</tabstop>
+  <tabstop>pushButton_5</tabstop>
+  <tabstop>lineEdit</tabstop>
+  <tabstop>checkBox</tabstop>
+  <tabstop>checkBox_2</tabstop>
+  <tabstop>checkBox_3</tabstop>
+  <tabstop>lineEdit_fsnName</tabstop>
+  <tabstop>checkBox_4</tabstop>
+  <tabstop>dateTimeEdit_2</tabstop>
+  <tabstop>dateTimeEdit</tabstop>
+  <tabstop>pushButton_4</tabstop>
+  <tabstop>pushButton_6</tabstop>
+  <tabstop>pushButton_8</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
